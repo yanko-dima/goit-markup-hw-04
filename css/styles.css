@@ -218,6 +218,7 @@ body {
   text-transform: uppercase;
   color: var(--mainBlack);
   margin: 0 0 10px 0;
+  padding-top: 30px;
 }
 
 .features-list {
@@ -233,7 +234,39 @@ body {
   margin-right: 30px;
 }
 
-. .features-text {
+.features-list-item::before {
+  content: "";
+  display: block;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+
+.features-list-item:nth-child(1)::before {
+  background-image: url(../images/antena.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.features-list-item:nth-child(2)::before {
+  background-image: url(../images/watch.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.features-list-item:nth-child(3)::before {
+  background-image: url(../images/notebook.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.features-list-item:nth-child(4)::before {
+  background-image: url(../images/astronaut.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.features-text {
   line-height: 1.7;
   margin: 0;
 }
@@ -274,6 +307,10 @@ body {
   margin: 0 auto 30px auto;
 }
 
+.team-content {
+  margin: 0 0 16px 0;
+}
+
 .team-title {
   font-weight: 500;
   font-size: 16px;
@@ -286,6 +323,23 @@ body {
   font-size: 16px;
   line-height: 1.2;
   margin: 0;
+}
+
+.team-smmlink-list {
+  display: flex;
+  margin: 0 32px 0;
+  justify-content: space-between;
+}
+
+.team-smmlink-item {
+}
+
+.team-smmlink {
+  display: inline-block;
+  align-content: center;
+  width: 44px;
+  height: 44px;
+  outline: 2px solid #ddd;
 }
 
 /* Footer section */
