@@ -1,0 +1,258 @@
+/* Second bgColor #F5F4FA  */
+
+:root {
+  /* Main colors */
+  --mainBlue: #2196f3;
+  --mainGray: #757575;
+  --mainBlack: #212121;
+
+  /* Bachgraund colors */
+  --mainBg: #ffffff;
+  --secondBg: #f5f4fa;
+  --darkBg: #2f303a;
+
+  /* Border color */
+  --mainBorder: #eeeeee;
+  --secondBorder: #ececec;
+
+  /* Font family */
+  --mainFont: "Roboto";
+  --secondFont: "Raleway";
+}
+
+body {
+  color: var(--mainGray);
+  background-color: var(--mainBg);
+  font-family: var(--mainFont);
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.section {
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--mainBlack);
+}
+
+/* Link hover decoration */
+.header-nav .link:hover,
+.header-nav .link:focus,
+.header-auth .link:hover,
+.header-auth .link:focus,
+.footer-info .link:hover,
+.footer-info .link:focus {
+  color: var(--mainBlue);
+}
+
+/* Header section  */
+.header {
+  border-bottom: 1px solid var(--secondBorder);
+}
+
+/* Logo */
+.header-logo {
+  text-decoration: none;
+  font-family: var(--secondFont);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--mainBlue);
+  letter-spacing: 0.03em;
+}
+
+.header-logo-decoration {
+  color: #000000;
+}
+
+.header-nav {
+}
+
+.header-nav .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--mainBlack);
+}
+
+.header-nav .current {
+  color: var(--mainBlue);
+}
+
+.header-auth {
+}
+
+.header-auth .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--mainGray);
+}
+
+/* Main section home page */
+
+/* Hero section */
+.hero {
+  background-color: var(--darkBg);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.btn {
+  cursor: pointer;
+  font-family: var(--mainFont);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+}
+
+.btn-primary {
+  color: #ffffff;
+  background-color: var(--mainBlue);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-color: transparent;
+}
+
+/* Features section */
+.features-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--mainBlack);
+}
+
+.fetures-text {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+/* What are we doing section */
+
+/* Team section */
+.team {
+  background-color: var(--secondBg);
+}
+.team-item {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--mainBlack);
+}
+
+.team-text {
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Footer section */
+.footer {
+  background-color: var(--darkBg);
+}
+
+.footer-logo {
+  text-decoration: none;
+  font-family: var(--secondFont);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--mainBlue);
+}
+
+.footer-logo-decoration {
+  color: #ffffff;
+}
+
+.footer-adress-link {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.footer-info .link {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: rgb(255, 255, 255, 0.6);
+}
+
+/* Main section portfolio */
+.portfolio-item {
+  border: 1px solid var(--mainBorder);
+  box-sizing: border-box;
+}
+
+.portfolio-item-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--mainBlack);
+}
+
+.portfolio-item-text {
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+}
+
+.btn-tab {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--mainBlack);
+  background-color: var(--secondBg);
+  border-radius: 4px;
+}
+
+.btn-tab:hover,
+.btn-tab:active {
+  color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  background-color: var(--mainBlue);
+}
