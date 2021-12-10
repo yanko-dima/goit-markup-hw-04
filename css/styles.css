@@ -152,7 +152,6 @@ body {
 }
 
 .header-auth-item {
-  /* padding: 32px 0; */
 }
 
 .header-auth-item:not(:last-child) {
