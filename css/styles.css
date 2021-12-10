@@ -338,7 +338,48 @@ body {
   align-content: center;
   width: 44px;
   height: 44px;
+  background-color: tomato;
+  /* background-image: url(../images/symbol-defs.svg#facebook); */
+
   outline: 2px solid #ddd;
+}
+
+/* Clients section */
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.clients-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-list-item:hover {
+  border: 1px solid #2196f3;
+}
+
+.clients-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.cients-logo {
+  width: 106px;
+  height: 60px;
+  fill: #afb1b8;
+}
+
+.cients-logo:hover {
+  fill: #2196f3;
+}
+
+.clients-link {
+  display: block;
 }
 
 /* Footer section */
@@ -362,7 +403,7 @@ body {
   color: var(--mainWhite);
 }
 
-.footer-info-item {
+.footer-info-item:not(:last-child) {
   margin: 0 0 9px 0;
 }
 
