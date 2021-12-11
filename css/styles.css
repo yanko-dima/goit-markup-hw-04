@@ -149,9 +149,6 @@ body {
   justify-content: end;
 }
 
-.header-auth-item {
-}
-
 .header-auth-item:not(:last-child) {
   margin-right: 50px;
 }
@@ -162,13 +159,21 @@ body {
 }
 
 .auth-ico {
-  width: 16px;
-  height: 16px;
   margin-right: 10px;
   fill: currentColor;
 }
 
-.header-auth .link {
+.auth-ico.mail {
+  width: 16px;
+  height: 12px;
+}
+
+.auth-ico.phone {
+  width: 10px;
+  height: 16px;
+}
+
+.header-auth.link {
   display: block;
   padding: 32px 0;
 
@@ -233,7 +238,6 @@ body {
   text-transform: uppercase;
   color: var(--mainBlack);
   margin: 0 0 10px 0;
-  padding-top: 30px;
 }
 
 .features-list {
@@ -245,40 +249,23 @@ body {
   width: 270px;
 }
 
-.features-list-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.features-list-item::before {
-  content: "";
-  display: block;
+.feauters-icon-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
+  margin-bottom: 30px;
 }
 
-.features-list-item:nth-child(1)::before {
-  background-image: url(../images/antena.svg);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+.feauters-icon {
+  width: 70px;
+  height: 70px;
 }
 
-.features-list-item:nth-child(2)::before {
-  background-image: url(../images/watch.svg);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
-
-.features-list-item:nth-child(3)::before {
-  background-image: url(../images/notebook.svg);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
-
-.features-list-item:nth-child(4)::before {
-  background-image: url(../images/astronaut.svg);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+.features-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .features-text {
