@@ -501,6 +501,7 @@ body {
 }
 
 .portfolio-item {
+  flex-basis: calc(100% / 3 - 30px);
   border: 1px solid var(--mainBorder);
   box-sizing: border-box;
 }
