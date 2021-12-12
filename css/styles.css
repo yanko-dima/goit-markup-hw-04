@@ -24,10 +24,6 @@
 }
 
 /* Site styles */
-html {
-  /* box-sizing: border-box; */
-}
-
 *,
 *::before,
 *::after {
@@ -362,36 +358,30 @@ body {
   flex-wrap: wrap;
 }
 
-.clients-list-item {
+.clients-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-link {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 170px;
   height: 92px;
+  color: var(--mainIcon);
   border: 1px solid var(--mainIcon);
   border-radius: 4px;
 }
 
-.clients-list-item:hover {
-  border: 1px solid #2196f3;
-}
-
-.clients-list-item:not(:last-child) {
-  margin-right: 30px;
+.clients-link:hover {
+  color: var(--mainBlue);
+  border: 1px solid var(--mainBlue);
 }
 
 .cients-logo {
   width: 106px;
   height: 60px;
-  fill: var(--mainIcon);
-}
-
-.cients-logo:hover {
-  fill: #2196f3;
-}
-
-.clients-link {
-  display: block;
+  fill: currentColor;
 }
 
 /* Footer section */
@@ -410,6 +400,8 @@ body {
 }
 
 .footer-smm-title {
+  font-size: 14px;
+  line-height: 1.1;
   color: var(--mainWhite);
   text-transform: uppercase;
   margin: 0 0 20px 0;
